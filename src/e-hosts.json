@@ -11,7 +11,7 @@
     "host": "github",
     "link": "https://github.com/StevenBlack/hosts",
     "filters": {
-      "hosts": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts"
+      "hosts": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts"
     }
   },
   "adaway": {
@@ -28,6 +28,13 @@
       "rules": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
     }
   },
+  "r-a-y-mobile-hosts": {
+    "host": "github",
+    "link": "https://github.com/r-a-y/mobile-hosts",
+    "filters": {
+      "hosts": "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardDNS.txt"
+    }
+  },
   "1hosts-pro": {
     "host": "github",
     "link": "https://github.com/badmojr/1Hosts",
@@ -36,12 +43,35 @@
       "rules": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/adblock.txt"
     }
   },
+  "1hosts-xtra": {
+    "host": "github",
+    "link": "https://github.com/badmojr/1Hosts",
+    "filters": {
+      "hosts": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Xtra/hosts.txt",
+      "rules": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Xtra/adblock.txt"
+    }
+  },
   "energized-ultimate": {
     "host": "external",
     "link": "https://github.com/EnergizedProtection/block",
     "filters": {
       "hosts": "https://block.energized.pro/ultimate/formats/hosts",
       "rules": "https://block.energized.pro/ultimate/formats/filter"
+    }
+  },
+  "energized-unified": {
+    "host": "external",
+    "link": "https://github.com/EnergizedProtection/block",
+    "filters": {
+      "hosts": "https://block.energized.pro/unified/formats/hosts",
+      "rules": "https://block.energized.pro/unified/formats/filter"
+    }
+  },
+  "energized-ips": {
+    "host": "external",
+    "link": "https://github.com/EnergizedProtection/block",
+    "filters": {
+      "hosts": "https://block.energized.pro/extensions/ips/formats/list.txt"
     }
   },
   "nextdns-recommended": [
