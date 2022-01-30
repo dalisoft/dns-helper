@@ -1,0 +1,26 @@
+{
+  "SecurityPage": {
+    "CollapseList": true
+  },
+  "PrivacyPage": {
+    "CollapseList": true,
+    "SortAZ": false
+  },
+  "AllowDenylistPage": {
+    "SortAZ": false,
+    "SortTLD": false,
+    "Bold": false,
+    "Lighten": false,
+    "RightAligned": false,
+    "MultilineTextBox": false,
+    "DomainsDescriptions": {}
+  },
+  "LogsPage": {
+    "ShowCounters": false,
+    "DomainsToHide": [
+      "nextdns.io",
+      ".in-addr.arpa",
+      ".ip6.arpa"
+    ]
+  }
+}
