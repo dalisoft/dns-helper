@@ -12,13 +12,22 @@ const rulesToList = require('./parser/rules-to-list');
 
 // Extract `allowlist` and `denylist` from here
 const { allowlist, denylist, privacy } = nextdnsConfig;
-const safeHost = ['localhost', 'local', 'broadcasthost', '0.0.0.0'];
+const safeHost = [
+  'localhost',
+  'local',
+  'broadcasthost',
+  '0.0.0.0',
+  '127.0.0.1'
+];
 const [runtime, execFile, type] = process.argv;
 
 async function main() {
   const results = [];
   for (const provider of privacy.blocklists) {
-    const result = await extractorHostImport(EXTERNAL_HOSTS[provider]);
+    const result = await extractorHostImport(
+      provider,
+      EXTERNAL_HOSTS[provider]
+    );
     results.push(result);
   }
 
@@ -77,7 +86,7 @@ async function main() {
       } else if (type === '--hosts') {
         const whitelist = dedupe(
           result.whitelists
-            .map((entry) => entry.active)
+            .filter((entry) => entry.active)
             .map((entry) => entry.domain)
         );
         const hosts = dedupe(

@@ -6,7 +6,8 @@ const hostsToList = (hosts_raw = '') => {
         return null;
       }
       const [ip, domain] = host.trim().split(' ');
-      return domain;
+
+      return host === ip ? ip : domain;
     })
     .filter((domain) => domain);
 
