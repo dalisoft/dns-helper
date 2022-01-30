@@ -1,0 +1,70 @@
+{
+  "goodbye-ads": {
+    "host": "github",
+    "link": "https://github.com/jerryn70/GoodbyeAds",
+    "filters": {
+      "hosts": "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Hosts/GoodbyeAds.txt",
+      "rules": "https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Formats/GoodbyeAds-AdBlock-Filter.txt"
+    }
+  },
+  "steven-black": {
+    "host": "github",
+    "link": "https://github.com/StevenBlack/hosts",
+    "filters": {
+      "hosts": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling/hosts"
+    }
+  },
+  "adaway": {
+    "host": "github",
+    "link": "https://github.com/AdAway/adaway.github.io",
+    "filters": {
+      "hosts": "https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt"
+    }
+  },
+  "adguard-dns-filter": {
+    "host": "github",
+    "link": "https://github.com/AdguardTeam/AdguardSDNSFilter",
+    "filters": {
+      "rules": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
+    }
+  },
+  "1hosts-pro": {
+    "host": "github",
+    "link": "https://github.com/badmojr/1Hosts",
+    "filters": {
+      "hosts": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/hosts.txt",
+      "rules": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/adblock.txt"
+    }
+  },
+  "energized-ultimate": {
+    "host": "external",
+    "link": "https://github.com/EnergizedProtection/block",
+    "filters": {
+      "hosts": "https://block.energized.pro/ultimate/formats/hosts",
+      "rules": "https://block.energized.pro/ultimate/formats/filter"
+    }
+  },
+  "nextdns-recommended": [
+    {
+      "host": "github",
+      "link": "https://github.com/jdlingyu/ad-wars",
+      "filters": {
+        "hosts": "https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts"
+      }
+    },
+    {
+      "host": "github",
+      "link": "https://github.com/tiuxo/hosts",
+      "filters": {
+        "hosts": "https://raw.githubusercontent.com/tiuxo/hosts/master/ads"
+      }
+    }
+  ],
+  "windowsspyblocker-spy": {
+    "host": "github",
+    "link": "https://github.com/crazy-max/WindowsSpyBlocke",
+    "filters": {
+      "hosts": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "ACTIVE_ALLOW_RULE_PREFIX": "@@||",
+  "ACTIVE_BLOCK_RULE_PREFIX": "||",
+  "INACTIVE_ALLOW_RULE_PREFIX": "!rule@@||",
+  "INACTIVE_BLOCK_RULE_PREFIX": "!rule||"
+}

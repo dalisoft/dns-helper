@@ -1,0 +1,8 @@
+{
+  "name": "@dalisoft/dns-helper",
+  "main": "./src/filter.js",
+  "scripts": {
+    "build:rules": "node ./src/filter.js --rules",
+    "build:host": "node ./src/filter.js --hosts"
+  }
+}
