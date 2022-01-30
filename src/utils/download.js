@@ -1,7 +1,7 @@
 const fs = require('fs');
 const https = require('https');
 
-function download(url, filePath) {
+function download(url) {
   return new Promise((resolve, reject) => {
     const buffers = [];
 
