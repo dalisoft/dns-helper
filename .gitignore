@@ -2,3 +2,4 @@ hosts
 blocklist.txt
 rules.txt
 whitelist.txt
+.DS_Store
