@@ -34,4 +34,4 @@ You can see output file in project folder
 
 ## License
 
-MIT License
+Apache-2.0 License
