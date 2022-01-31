@@ -1,16 +1,23 @@
-const { name, description, version } = require('../package.json');
+const { name, description, version, homepage } = require('../package.json');
 
 const RULES_COMMENT = `!
 ! Title: dalisoft's custom filter
-! Version: ${version}
 ! Description: ${description}
-! Homepage: https://github.com/dalisoft/dns-helper
+! Version: ${version}
+! TimeUpdated: ${new Date().toISOString()}
+!
+!
+! Title: dalisoft's custom filter
+! Description: ${description}
+! Homepage: ${homepage}
+! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
+! Last modified: ${new Date().toISOString()}
 !
 ! Compiled by ${name} ${version}
 !
 !
 ! Source name: dalisoft Custom DNS filters
-! Source: https://github.com/dalisoft/dns-helper/releases/latest/download/rules.txt
+! Source: ${homepage}/releases/latest/download/rules.txt
 !
 !
 ! Section contains list of advertising networks
@@ -24,13 +31,16 @@ const HOSTS_COMMENT = `# Title: dalisoft's custom filter
 #
 # ${description}
 #
-# Fetch the latest version of this file: https://github.com/dalisoft/dns-helper/releases/latest/download/hosts.txt
-# Project home page: https://github.com/dalisoft/dns-helper
-# Project releases: https://github.com/dalisoft/dns-helper/releases
+# Date: ${new Date().toUTCString()}
+#
+# Fetch the latest version of this file: ${homepage}/releases/latest/download/hosts.txt
+# Project home page: ${homepage}
+# Project releases: ${homepage}/releases
 #
 # Compiled by ${name} ${version}
 #
 # ===============================================================
+
 `;
 
 module.exports = { RULES_COMMENT, HOSTS_COMMENT };
