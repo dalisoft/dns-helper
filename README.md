@@ -21,10 +21,10 @@ Just [Node.js](https://nodejs.org/en/) should be installed, no dependencies requ
 
 ## Formats
 
-| Format    | Where used                          |
-|-----------|-------------------------------------|
-| **rules** | AdGuard, uBlock Origin or AdBlocker |
-| **hosts** | OS-level `hosts` file               |
+| Format    | Where used                          | Direct link                                                                       |
+| --------- | ----------------------------------- | --------------------------------------------------------------------------------- |
+| **rules** | AdGuard, uBlock Origin or AdBlocker | [Link](https://github.com/dalisoft/dns-helper/releases/latest/download/rules.txt) |
+| **hosts** | OS-level `hosts` file               | [Link](https://github.com/dalisoft/dns-helper/releases/latest/download/hosts.txt) |
 
 ## Running
 
