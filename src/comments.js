@@ -1,9 +1,12 @@
+const { name, description, version } = require('../package.json');
+
 const RULES_COMMENT = `!
 ! Title: dalisoft's custom filter
-! Description: Filter composed of several other filters based on user choice and simplified specifically to be better compatible with DNS-level ad blocking.
+! Version: ${version}
+! Description: ${description}
 ! Homepage: https://github.com/dalisoft/dns-helper
 !
-! Compiled by @dalisoft/dns-helper v1.0.0
+! Compiled by ${name} ${version}
 !
 !
 ! Source name: dalisoft Custom DNS filters
@@ -17,13 +20,15 @@ const RULES_COMMENT = `!
 `;
 
 const HOSTS_COMMENT = `# Title: dalisoft's custom filter
+# Version: ${version}
 #
-# Filter composed of several other filters based on user choice and
-# simplified specifically to be better compatible with DNS-level ad blocking
+# ${description}
 #
 # Fetch the latest version of this file: https://github.com/dalisoft/dns-helper/releases/latest/download/hosts.txt
 # Project home page: https://github.com/dalisoft/dns-helper
 # Project releases: https://github.com/dalisoft/dns-helper/releases
+#
+# Compiled by ${name} ${version}
 #
 # ===============================================================
 `;
