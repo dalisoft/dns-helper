@@ -4,7 +4,7 @@ const RULES_COMMENT = `!
 ! Title: dalisoft's custom filter
 ! Description: ${description}
 ! Version: ${version}
-! TimeUpdated: ${new Date().toISOString()}
+! TimeUpdated: ${new Date().toISOString().split('.')[0] + '+00:00'}
 !
 !
 ! Title: dalisoft's custom filter
@@ -31,7 +31,7 @@ const HOSTS_COMMENT = `# Title: dalisoft's custom filter
 #
 # ${description}
 #
-# Date: ${new Date().toUTCString()}
+# Date: ${new Date().toString()}
 #
 # Fetch the latest version of this file: ${homepage}/releases/latest/download/hosts.txt
 # Project home page: ${homepage}
