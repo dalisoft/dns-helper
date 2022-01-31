@@ -9,15 +9,24 @@ const CONSTANTS = require('./constants.json');
 const EXTERNAL_HOSTS = require('./e-hosts.json');
 const nextdnsConfig = require('../nextdns-config.json');
 const rulesToList = require('./parser/rules-to-list');
+const { RULES_COMMENT, HOSTS_COMMENT } = require('./comments');
 
 // Extract `allowlist` and `denylist` from here
 const { allowlist, denylist, privacy } = nextdnsConfig;
 const safeHost = [
   'localhost',
   'local',
+  'localhost.localdomain',
   'broadcasthost',
   '0.0.0.0',
-  '127.0.0.1'
+  '127.0.0.1',
+  'ip6-localhost',
+  'ip6-loopback',
+  'ip6-localnet',
+  'ip6-mcastprefix',
+  'ip6-allnodes',
+  'ip6-allrouters',
+  'ip6-allhosts'
 ];
 const [runtime, execFile, type] = process.argv;
 
@@ -69,18 +78,22 @@ async function main() {
     })
     .then((result) => {
       if (type === '--rules') {
-        result.blocklists = result.blocklists.map(
-          mapFilters(
-            CONSTANTS.ACTIVE_BLOCK_RULE_PREFIX,
-            CONSTANTS.INACTIVE_BLOCK_RULE_PREFIX
-          )
-        );
-        result.whitelists = result.whitelists.map(
-          mapFilters(
-            CONSTANTS.ACTIVE_ALLOW_RULE_PREFIX,
-            CONSTANTS.INACTIVE_ALLOW_RULE_PREFIX
-          )
-        );
+        result.blocklists = result.blocklists
+          .filter(({ domain }) => !safeHost.includes(domain))
+          .map(
+            mapFilters(
+              CONSTANTS.ACTIVE_BLOCK_RULE_PREFIX,
+              CONSTANTS.INACTIVE_BLOCK_RULE_PREFIX
+            )
+          );
+        result.whitelists = result.whitelists
+          .filter(({ domain }) => !safeHost.includes(domain))
+          .map(
+            mapFilters(
+              CONSTANTS.ACTIVE_ALLOW_RULE_PREFIX,
+              CONSTANTS.INACTIVE_ALLOW_RULE_PREFIX
+            )
+          );
 
         result.mode = 'rules';
       } else if (type === '--hosts') {
@@ -110,9 +123,15 @@ async function main() {
       const rules = dedupe([...blocklists, ...whitelists]);
 
       if (mode === 'rules') {
-        return fs.writeFile(path.resolve('rules.txt'), rules.join('\n'));
+        return fs.writeFile(
+          path.resolve('rules.txt'),
+          RULES_COMMENT + rules.join('\n')
+        );
       } else if (mode === 'hosts') {
-        return fs.writeFile(path.resolve('hosts'), rules.join('\n'));
+        return fs.writeFile(
+          path.resolve('hosts.txt'),
+          HOSTS_COMMENT + rules.join('\n')
+        );
       }
     });
 }
