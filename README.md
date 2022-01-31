@@ -22,13 +22,15 @@ Just [Node.js](https://nodejs.org/en/) should be installed, no dependencies requ
 ## Formats
 
 | Format    | Where used                          |
-| --------- | ----------------------------------- |
+|-----------|-------------------------------------|
 | **rules** | AdGuard, uBlock Origin or AdBlocker |
 | **hosts** | OS-level `hosts` file               |
 
 ## Running
 
-`npm run build:rules` or `npm run build:hosts` depending of which format do you want
+`npm run build:rules` or `npm run build:hosts` depending of which format do you want.
+
+You can see output file in project folder
 
 ## License
 
