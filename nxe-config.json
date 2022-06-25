@@ -1,26 +1,26 @@
 {
-  "SecurityPage": {
-    "CollapseList": true
+  "AllowDenylistPage": {
+    "Bold": false,
+    "DomainsDescriptions": {},
+    "Lighten": false,
+    "MultilineTextBox": false,
+    "RightAligned": false,
+    "SortAZ": false,
+    "SortTLD": false
+  },
+  "LogsPage": {
+    "DomainsToHide": [
+      "nextdns.io",
+      ".in-addr.arpa",
+      ".ip6.arpa"
+    ],
+    "ShowCounters": false
   },
   "PrivacyPage": {
     "CollapseList": true,
     "SortAZ": false
   },
-  "AllowDenylistPage": {
-    "SortAZ": false,
-    "SortTLD": false,
-    "Bold": false,
-    "Lighten": false,
-    "RightAligned": false,
-    "MultilineTextBox": false,
-    "DomainsDescriptions": {}
-  },
-  "LogsPage": {
-    "ShowCounters": false,
-    "DomainsToHide": [
-      "nextdns.io",
-      ".in-addr.arpa",
-      ".ip6.arpa"
-    ]
+  "SecurityPage": {
+    "CollapseList": true
   }
 }

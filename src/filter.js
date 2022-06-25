@@ -28,11 +28,16 @@ const safeHost = [
   'ip6-allrouters',
   'ip6-allhosts'
 ];
+const buggyRules = ['@@||@@||^'];
+const ignoreHosts = ['fanboy-annoyance'];
 const [runtime, execFile, type] = process.argv;
 
 async function main() {
   const results = [];
   for (const provider of privacy.blocklists) {
+    if (ignoreHosts.includes(provider)) {
+      continue;
+    }
     const result = await extractorHostImport(
       provider,
       EXTERNAL_HOSTS[provider]
@@ -79,7 +84,7 @@ async function main() {
     .then((result) => {
       if (type === '--rules') {
         result.blocklists = result.blocklists
-          .filter(({ domain }) => !safeHost.includes(domain))
+          .filter(({ domain }) => domain && !safeHost.includes(domain))
           .map(
             mapFilters(
               CONSTANTS.ACTIVE_BLOCK_RULE_PREFIX,
@@ -87,7 +92,8 @@ async function main() {
             )
           );
         result.whitelists = result.whitelists
-          .filter(({ domain }) => !safeHost.includes(domain))
+          .filter(({ domain }) => domain && !safeHost.includes(domain))
+
           .map(
             mapFilters(
               CONSTANTS.ACTIVE_ALLOW_RULE_PREFIX,
@@ -99,7 +105,7 @@ async function main() {
       } else if (type === '--hosts') {
         const whitelist = dedupe(
           result.whitelists
-            .filter((entry) => entry.active)
+            .filter((entry) => entry.active && entry.domain)
             .map((entry) => entry.domain)
         );
         const hosts = dedupe(
@@ -107,6 +113,7 @@ async function main() {
             .filter(
               (block) =>
                 block.active &&
+                block.domain &&
                 !whitelist.includes(block.domain) &&
                 !safeHost.includes(block.domain)
             )
@@ -120,7 +127,9 @@ async function main() {
       return result;
     })
     .then(({ mode, blocklists, whitelists }) => {
-      const rules = dedupe([...blocklists, ...whitelists]);
+      const rules = dedupe([...blocklists, ...whitelists]).filter(
+        (rule) => !buggyRules.includes(rule)
+      );
 
       if (mode === 'rules') {
         return fs.writeFile(
