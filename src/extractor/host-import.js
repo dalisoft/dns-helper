@@ -7,6 +7,10 @@ const hostToBuffer = async (provider, info) => {
     );
     return lists.flat(1);
   }
+  if (!info) {
+    console.debug({ provider, info });
+    throw new Error('Info not found');
+  }
   if (info.filters.hosts) {
     return [
       { provider, type: 'hosts', content: await download(info.filters.hosts) }

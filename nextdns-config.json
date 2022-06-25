@@ -1,73 +1,13 @@
 {
-  "security": {
-    "threatIntelligenceFeeds": true,
-    "aiThreatDetection": true,
-    "googleSafeBrowsing": true,
-    "cryptojacking": true,
-    "dnsRebinding": true,
-    "homograph": true,
-    "typosquatting": true,
-    "dga": true,
-    "nrd": true,
-    "parked": true,
-    "csam": true,
-    "blocked_tlds": []
-  },
-  "parentalcontrol": {
-    "safeSearch": false,
-    "youtubeRestrictedMode": false,
-    "blockBypass": false,
-    "services": [
-      {
-        "id": "tinder",
-        "active": false
-      },
-      {
-        "id": "whatsapp",
-        "active": false
-      },
-      {
-        "id": "zoom",
-        "active": false
-      },
-      {
-        "id": "blizzard",
-        "active": false
-      },
-      {
-        "id": "ebay",
-        "active": false
-      }
-    ],
-    "categories": [
-      {
-        "id": "gambling",
-        "recreation": false,
-        "active": true
-      },
-      {
-        "id": "dating",
-        "recreation": false,
-        "active": true
-      },
-      {
-        "id": "porn",
-        "recreation": false,
-        "active": false
-      },
-      {
-        "id": "piracy",
-        "recreation": false,
-        "active": false
-      },
-      {
-        "id": "social-networks",
-        "recreation": false,
-        "active": false
-      }
-    ]
-  },
   "denylist": [
+    {
+      "domain": "ntp.msn.com",
+      "active": true
+    },
+    {
+      "domain": "easeus.com",
+      "active": false
+    },
     {
       "domain": "ocsp.apple.com",
       "active": false
@@ -78,7 +18,7 @@
     },
     {
       "domain": "bing.com",
-      "active": true
+      "active": false
     },
     {
       "domain": "aflt.yandex.ru",
@@ -354,7 +294,7 @@
     },
     {
       "domain": "manifest.googlevideo.com",
-      "active": true
+      "active": false
     },
     {
       "domain": "googletagmanager.com",
@@ -374,7 +314,7 @@
     },
     {
       "domain": "ogs.google.com",
-      "active": true
+      "active": false
     },
     {
       "domain": "tpc.googlesyndication.com",
@@ -394,7 +334,7 @@
     },
     {
       "domain": "graph.instagram.com",
-      "active": true
+      "active": false
     },
     {
       "domain": "admitad-connect.com",
@@ -413,24 +353,58 @@
       "active": true
     }
   ],
-  "settings": {
-    "name": "Secure L1",
-    "logging": true,
-    "logging_disable_query": false,
-    "logging_disable_client": true,
-    "logging_retention": 2592000,
-    "logging_location": "ch",
-    "blockPage": false,
-    "ecs": true,
-    "cacheBoost": true,
-    "cnameFlattening": true,
-    "handshake": true,
-    "rewrites": []
-  },
   "allowlist": [
     {
-      "domain": "adguard.com",
+      "domain": "amp-api-edge.apps.apple.com",
       "active": true
+    },
+    {
+      "domain": "i.instagram.com",
+      "active": true
+    },
+    {
+      "domain": "emaillinks.soundiiz.com",
+      "active": true
+    },
+    {
+      "domain": "outline.community",
+      "active": true
+    },
+    {
+      "domain": "rsload.xyz",
+      "active": true
+    },
+    {
+      "domain": "sso.passport.yandex.ru",
+      "active": true
+    },
+    {
+      "domain": "nnmstatic.win",
+      "active": true
+    },
+    {
+      "domain": "cdn.swaptrap.live",
+      "active": false
+    },
+    {
+      "domain": "track.slurm.io",
+      "active": false
+    },
+    {
+      "domain": "cs.pikabu.ru",
+      "active": false
+    },
+    {
+      "domain": "braze.com",
+      "active": true
+    },
+    {
+      "domain": "oca.nflxvideo.net",
+      "active": true
+    },
+    {
+      "domain": "adguard.com",
+      "active": false
     },
     {
       "domain": "activity.windows.com",
@@ -689,6 +663,101 @@
       "active": false
     }
   ],
+  "parentalcontrol": {
+    "safeSearch": false,
+    "youtubeRestrictedMode": false,
+    "blockBypass": false,
+    "services": [
+      {
+        "id": "tinder",
+        "active": false
+      },
+      {
+        "id": "whatsapp",
+        "active": false
+      },
+      {
+        "id": "zoom",
+        "active": false
+      },
+      {
+        "id": "blizzard",
+        "active": true
+      },
+      {
+        "id": "ebay",
+        "active": true
+      },
+      {
+        "id": "pinterest",
+        "active": true
+      },
+      {
+        "id": "facebook",
+        "active": true
+      },
+      {
+        "id": "minecraft",
+        "active": true
+      }
+    ],
+    "categories": [
+      {
+        "id": "gambling",
+        "recreation": false,
+        "active": true
+      },
+      {
+        "id": "dating",
+        "recreation": false,
+        "active": true
+      },
+      {
+        "id": "porn",
+        "recreation": false,
+        "active": false
+      },
+      {
+        "id": "piracy",
+        "recreation": false,
+        "active": false
+      },
+      {
+        "id": "social-networks",
+        "recreation": false,
+        "active": false
+      }
+    ]
+  },
+  "security": {
+    "threatIntelligenceFeeds": true,
+    "aiThreatDetection": true,
+    "googleSafeBrowsing": true,
+    "cryptojacking": true,
+    "dnsRebinding": true,
+    "homograph": true,
+    "typosquatting": true,
+    "dga": true,
+    "nrd": true,
+    "ddns": false,
+    "parked": true,
+    "csam": true,
+    "blocked_tlds": []
+  },
+  "settings": {
+    "name": "Secure L1",
+    "logging": true,
+    "logging_disable_query": false,
+    "logging_disable_client": true,
+    "logging_retention": 2592000,
+    "logging_location": "ch",
+    "blockPage": false,
+    "ecs": true,
+    "cacheBoost": true,
+    "cnameFlattening": true,
+    "web3": true,
+    "rewrites": []
+  },
   "privacy": {
     "blockDisguised": true,
     "allowAffiliate": false,
@@ -697,11 +766,18 @@
       "steven-black",
       "adaway",
       "adguard-dns-filter",
-      "r-a-y-mobile-hosts",
       "1hosts-pro",
       "energized-ultimate",
       "nextdns-recommended",
-      "windowsspyblocker-spy"
+      "windowsspyblocker-spy",
+      "peter-lowe",
+      "adguard-base-filter",
+      "uncheckyads",
+      "someonewhocares",
+      "fanboy-annoyance",
+      "adguard-tracking-protection-filter",
+      "easyprivacy",
+      "easylist"
     ],
     "natives": [
       {
