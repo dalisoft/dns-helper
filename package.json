@@ -1,6 +1,6 @@
 {
   "name": "@dalisoft/dns-helper",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "type": "module",
   "description": "Filter composed of several other filters based on user choice and simplified specifically to be better compatible with DNS-level ad blocking",
   "engines": {
