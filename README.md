@@ -14,27 +14,22 @@ configuration got from [NXEnhanced](https://github.com/hjk789/NXEnhanced)
 
 - <https://github.com/justdomains/ci>
 
-## Preparing
+## Building
 
 - Install [NXEnhnced](https://github.com/hjk789/NXEnhanced)
 - Download your NextDNS config
 - Put your config to this project folder
 - Change NextDNS config name to `nextdns-config.json`
 - Change NXEnhanced config name to `nxe-config.json`
-- You can run [Running](#running) command
+- Run `sh build.sh`, wait and see `rules.txt` and `hosts.txt` file
 
 ## Formats
 
-| Format    | Where used                          | Direct link                                                                       |
-| --------- | ----------------------------------- | --------------------------------------------------------------------------------- |
-| **rules** | AdGuard, uBlock Origin or AdBlocker | [Link](./releases/latest/download/rules.txt) |
-| **hosts** | OS-level `hosts` file               | [Link](./releases/latest/download/hosts.txt) |
+The are two formats. **Rules** and **Hosts** format (see release for files).
 
-## Running
+**Rules** are used in AdGuard, uBlock Origin or AdBlocker
 
-Run `sh build.sh` and wait.
-
-You can see output file in project folder
+**hosts** are used OS-level `hosts` file
 
 ## License
 
