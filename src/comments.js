@@ -1,4 +1,5 @@
-const { name, description, version, homepage } = require('../package.json');
+import pkg from '../package.json' assert { type: 'json' };
+const { description, homepage, name, version } = pkg;
 
 const RULES_COMMENT = `!
 ! Title: dalisoft's custom filter
@@ -43,4 +44,4 @@ const HOSTS_COMMENT = `# Title: dalisoft's custom filter
 
 `;
 
-module.exports = { RULES_COMMENT, HOSTS_COMMENT };
+export { RULES_COMMENT, HOSTS_COMMENT };

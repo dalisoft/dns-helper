@@ -5,10 +5,14 @@ configuration got from [NXEnhanced](https://github.com/hjk789/NXEnhanced)
 
 ## Installation
 
-Just [Node.js](https://nodejs.org/en/) should be installed, no dependencies required
-
-- Install [Node.js](https://nodejs.org/en/)
+- Install  [Node.js](https://nodejs.org/en/)
+- Install [Python 3.3+](https://www.python.org)
 - Clone this repo
+- Project dependencies (`pip install -r requirements.txt`)
+
+## Used projects
+
+- <https://github.com/justdomains/ci>
 
 ## Preparing
 
@@ -23,12 +27,12 @@ Just [Node.js](https://nodejs.org/en/) should be installed, no dependencies requ
 
 | Format    | Where used                          | Direct link                                                                       |
 | --------- | ----------------------------------- | --------------------------------------------------------------------------------- |
-| **rules** | AdGuard, uBlock Origin or AdBlocker | [Link](https://github.com/dalisoft/dns-helper/releases/latest/download/rules.txt) |
-| **hosts** | OS-level `hosts` file               | [Link](https://github.com/dalisoft/dns-helper/releases/latest/download/hosts.txt) |
+| **rules** | AdGuard, uBlock Origin or AdBlocker | [Link](./releases/latest/download/rules.txt) |
+| **hosts** | OS-level `hosts` file               | [Link](./releases/latest/download/hosts.txt) |
 
 ## Running
 
-`npm run build:rules` or `npm run build:hosts` depending of which format do you want.
+Run `sh build.sh` and wait.
 
 You can see output file in project folder
 
