@@ -1,8 +1,6 @@
 name: Main
 
-on:
-  schedule:
-    - cron: "0 0 * * *"
+on: push
 
 jobs:
   build:
@@ -21,6 +19,7 @@ jobs:
         run: sh build.sh
       - name: Release
         uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
             hosts.txt
