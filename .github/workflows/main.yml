@@ -20,5 +20,6 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
+            domains.txt
             hosts.txt
             rules.txt
