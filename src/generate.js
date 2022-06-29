@@ -39,7 +39,7 @@ filters.unshift({
 });
 filters.push({
   name: "dalisoft's Custom Filter",
-  url: `file://${path.resolve('rules.txt')}`,
+  url: `file://${path.resolve('dalisoft.txt')}`,
   format: 'adbp',
   outputfile: 'dalisoft.txt'
 });
