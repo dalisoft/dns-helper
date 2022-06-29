@@ -1,14 +1,10 @@
 {
   "name": "@dalisoft/dns-helper",
-  "version": "1.1.4",
+  "version": "2.0.0",
+  "type": "module",
   "description": "Filter composed of several other filters based on user choice and simplified specifically to be better compatible with DNS-level ad blocking",
-  "main": "./src/filter.js",
-  "scripts": {
-    "build:rules": "node ./src/filter.js --rules",
-    "build:hosts": "node ./src/filter.js --hosts"
-  },
   "engines": {
-    "node": ">=12.22.1"
+    "node": ">=16.15.1"
   },
   "repository": {
     "type": "git",

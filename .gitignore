@@ -1,5 +1,7 @@
-hosts.txt
-blocklist.txt
+dalisoft.txt
 rules.txt
-whitelist.txt
-.DS_Store
+domains.txt
+hosts.txt
+lists.json
+converted
+originals
