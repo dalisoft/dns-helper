@@ -1,12 +1,15 @@
 name: Main
 
-on: push
+on:
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: fregante/daily-version-action@v2
       - uses: actions/setup-node@v3
         with:
           node-version: 16
