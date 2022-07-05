@@ -1,12 +1,7 @@
-name: Main
+name: Build & push & commit
 
 on:
   workflow_dispatch:
-  push:
-    tags:
-      - v1.**
-      - v2.**
-      - v3.**
   schedule:
     - cron: '0 0 * * *'
 
@@ -29,7 +24,7 @@ jobs:
         run: python3 -m pip install -r requirements.txt
       - name: Build
         run: sh build.sh
-      - name: Release
+      - name: Build and push
         run: |
           git add -A hosts.txt rules.txt
           git commit -m "Update build files"
