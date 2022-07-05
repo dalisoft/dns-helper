@@ -146,5 +146,49 @@
     "filters": {
       "hosts": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt"
     }
+  },
+  "oisd": {
+    "host": "external",
+    "link": "https://oisd.nl",
+    "filters": {
+      "rules": "https://abp.oisd.nl",
+      "hosts": "https://hosts.oisd.nl"
+    }
+  },
+  "notracking": {
+    "host": "github",
+    "link": "https://github.com/notracking/hosts-blocklists",
+    "filters": {
+      "rules": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/adblock/adblock.txt",
+      "hosts": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt"
+    }
+  },
+  "lightswitch05-ads-tracking": {
+    "host": "github",
+    "link": "https://github.com/lightswitch05/hosts",
+    "filters": {
+      "hosts": "https://www.github.developerdan.com/hosts/lists/ads-and-tracking-extended.txt"
+    }
+  },
+  "perflyst-smarttv": {
+    "host": "github",
+    "link": "https://github.com/Perflyst/PiHoleBlocklist",
+    "filters": {
+      "rules": "https://perflyst.github.io/PiHoleBlocklist/SmartTV-AGH.txt"
+    }
+  },
+  "adguard-russian-filter": {
+    "host": "external",
+    "link": "https://kb.adguard.com/general/adguard-ad-filters#russian-filter",
+    "filters": {
+      "rules": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_1_Russian/filter.txt"
+    }
+  },
+  "ru-adlist": {
+    "host": "external",
+    "link": "https://forums.lanik.us/viewforum.php?f=102",
+    "filters": {
+      "rules": "https://easylist-downloads.adblockplus.org/advblock.txt"
+    }
   }
 }

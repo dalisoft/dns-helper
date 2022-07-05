@@ -1,5 +1,5 @@
 import pkg from '../package.json' assert { type: 'json' };
-import { filters } from './filters.js';
+import { rawFilters } from './filters.js';
 const { description, homepage, name, version } = pkg;
 
 const RULES_COMMENT = `!
@@ -20,7 +20,7 @@ const RULES_COMMENT = `!
 !
 !
 ! Section contains these filters
-${filters.map(({ name }) => `! - ${name}`).join('\n')}
+${rawFilters.map(([name, { link }]) => `! - ${name} (${link})`).join('\n')}
 !
 `;
 
@@ -43,7 +43,7 @@ const HOSTS_COMMENT = `# =======================================================
 #
 #
 # Section contains these filters
-${filters.map(({ name }) => `# - ${name}`).join('\n')}
+${rawFilters.map(([name, { link }]) => `# - ${name} (${link})`).join('\n')}
 #
 # ===============================================================
 

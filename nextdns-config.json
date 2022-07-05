@@ -777,7 +777,13 @@
       "fanboy-annoyance",
       "adguard-tracking-protection-filter",
       "easyprivacy",
-      "easylist"
+      "easylist",
+      "oisd",
+      "notracking",
+      "lightswitch05-ads-tracking",
+      "perflyst-smarttv",
+      "adguard-russian-filter",
+      "ru-adlist"
     ],
     "natives": [
       {
