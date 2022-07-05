@@ -1,44 +1,49 @@
 import pkg from '../package.json' assert { type: 'json' };
+import { filters } from './filters.js';
 const { description, homepage, name, version } = pkg;
 
 const RULES_COMMENT = `!
 ! Title: dalisoft's custom filter
-! Description: ${description}
 ! Version: ${version}
-! TimeUpdated: ${new Date().toISOString().split('.')[0] + '+00:00'}
-!
-!
-! Title: dalisoft's custom filter
 ! Description: ${description}
 ! Homepage: ${homepage}
-! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
+! TimeUpdated: ${new Date().toISOString().split('.')[0] + '+00:00'}
+!
+! License: ${homepage}/blob/master/LICENSE
 ! Last modified: ${new Date().toISOString()}
 !
 ! Compiled by ${name} ${version}
 !
 !
 ! Source name: dalisoft Custom DNS filters
-! Source: ${homepage}/releases/latest/download/rules.txt
+! Source: ${homepage}/blob/master/rules.txt
 !
 !
-! Section contains list of advertising networks
-!
-! The rules with hints are at the end of file
+! Section contains these filters
+${filters.map(({ name }) => `! - ${name}`).join('\n')}
 !
 `;
 
-const HOSTS_COMMENT = `# Title: dalisoft's custom filter
+const HOSTS_COMMENT = `# ===============================================================
+# Title: dalisoft's custom filter
+# Homepage: ${homepage}
 # Version: ${version}
+# Description: ${description}
+# TimeUpdated: ${new Date().toISOString().split('.')[0] + '+00:00'}
 #
-# ${description}
 #
-# Date: ${new Date().toString()}
-#
-# Fetch the latest version of this file: ${homepage}/releases/latest/download/hosts.txt
-# Project home page: ${homepage}
-# Project releases: ${homepage}/releases
+# License: ${homepage}/blob/master/LICENSE
+# Last modified: ${new Date().toISOString()}
 #
 # Compiled by ${name} ${version}
+#
+#
+# Source name: dalisoft Custom DNS filters
+# Source: ${homepage}/blob/master/hosts.txt
+#
+#
+# Section contains these filters
+${filters.map(({ name }) => `# - ${name}`).join('\n')}
 #
 # ===============================================================
 
