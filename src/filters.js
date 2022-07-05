@@ -4,6 +4,7 @@ import EXTERNAL_HOSTS from './e-hosts.json' assert { type: 'json' };
 
 const { ACTIVE_ALLOW_RULE_PREFIX, ACTIVE_BLOCK_RULE_PREFIX } = constants;
 
+export const rawFilters = Object.entries(EXTERNAL_HOSTS);
 export const filters = Object.entries(EXTERNAL_HOSTS)
   .filter(([name]) => nextdnsConfig.privacy.blocklists.includes(name))
   .map(function mapFilter([name, entry]) {
