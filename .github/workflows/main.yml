@@ -1,6 +1,12 @@
 name: Main
 
 on:
+  workflow_dispatch:
+  push:
+    tags:
+      - v1.**
+      - v2.**
+      - v3.**
   schedule:
     - cron: '0 0 * * *'
 
