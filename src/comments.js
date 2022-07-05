@@ -20,7 +20,9 @@ const RULES_COMMENT = `!
 !
 !
 ! Section contains these filters
-${rawFilters.map(([name, { link }]) => `! - ${name} (${link})`).join('\n')}
+${rawFilters
+  .map(({ name, entry: { link } }) => `! - ${name} (${link})`)
+  .join('\n')}
 !
 `;
 
@@ -43,7 +45,9 @@ const HOSTS_COMMENT = `# =======================================================
 #
 #
 # Section contains these filters
-${rawFilters.map(([name, { link }]) => `# - ${name} (${link})`).join('\n')}
+${rawFilters
+  .map(({ name, entry: { link } }) => `# - ${name} (${link})`)
+  .join('\n')}
 #
 # ===============================================================
 

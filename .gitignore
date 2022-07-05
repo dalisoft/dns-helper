@@ -3,3 +3,7 @@ domains.txt
 lists.json
 converted
 originals
+
+# mac stuffs
+.DS_Store
+.Trash
