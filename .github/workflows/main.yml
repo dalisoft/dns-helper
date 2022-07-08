@@ -24,8 +24,9 @@ jobs:
         run: python3 -m pip install -r requirements.txt
       - name: Build
         run: sh build.sh
-      - name: Build and push
-        run: |
-          git add -A hosts.txt rules.txt
-          git commit -m "Update build files"
-          git push "https://dalisoft:${{ secrets.SECRET_TOKEN }}@github.com/dalisoft/dns-helper" master
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            hosts.txt
+            rules.txt
