@@ -25,13 +25,10 @@ configuration got from [NXEnhanced](https://github.com/hjk789/NXEnhanced)
 
 ## Formats
 
-The are two formats. **Rules** and **Hosts** format (see `rules.txt` or `hosts.txt` for files`*`).
-
-**Rules** are used in AdGuard, uBlock Origin or AdBlocker
-
-**hosts** are used OS-level `hosts` file
-
-`*` - old files we're in releases, lately we switched to Git LFS and in-repo files for better maintainability
+| Format    | Where used                          | Direct link                                                                       |
+| --------- | ----------------------------------- | --------------------------------------------------------------------------------- |
+| **rules** | AdGuard, uBlock Origin or AdBlocker | [Link](https://github.com/dalisoft/dns-helper/releases/latest/download/rules.txt) |
+| **hosts** | OS-level `hosts` file               | [Link](https://github.com/dalisoft/dns-helper/releases/latest/download/hosts.txt) |
 
 ## License
 
