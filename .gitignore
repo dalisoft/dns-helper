@@ -3,6 +3,8 @@ domains.txt
 lists.json
 converted
 originals
+hosts.txt
+rules.txt
 
 # mac stuffs
 .DS_Store
