@@ -1,668 +1,859 @@
 {
-  "denylist": [
-    {
-      "domain": "ntp.msn.com",
-      "active": true
-    },
-    {
-      "domain": "easeus.com",
-      "active": false
-    },
-    {
-      "domain": "ocsp.apple.com",
-      "active": false
-    },
-    {
-      "domain": "u-stream.in",
-      "active": true
-    },
-    {
-      "domain": "bing.com",
-      "active": false
-    },
-    {
-      "domain": "aflt.yandex.ru",
-      "active": true
-    },
-    {
-      "domain": "news-fancy.com",
-      "active": true
-    },
-    {
-      "domain": "lalucherut.com",
-      "active": true
-    },
-    {
-      "domain": "cdn.trafficbass.com",
-      "active": true
-    },
-    {
-      "domain": "adfox.yandex.ru",
-      "active": true
-    },
-    {
-      "domain": "an.yandex.ru",
-      "active": true
-    },
-    {
-      "domain": "ads.adfox.ru",
-      "active": true
-    },
-    {
-      "domain": "appstatico.eltima.com",
-      "active": true
-    },
-    {
-      "domain": "adobelogin.com",
-      "active": false
-    },
-    {
-      "domain": "adobe.io",
-      "active": false
-    },
-    {
-      "domain": "adobe.com",
-      "active": true
-    },
-    {
-      "domain": "crrepo.com",
-      "active": true
-    },
-    {
-      "domain": "linkonclick.com",
-      "active": true
-    },
-    {
-      "domain": "cx.atdmt.com",
-      "active": true
-    },
-    {
-      "domain": "uplus.co.kr",
-      "active": true
-    },
-    {
-      "domain": "ninja.data.olxcdn.com",
-      "active": true
-    },
-    {
-      "domain": "laquesis.data.olxcdn.com",
-      "active": true
-    },
-    {
-      "domain": "in-addr.arpa",
-      "active": false
-    },
-    {
-      "domain": "services.gfe.nvidia.com",
-      "active": true
-    },
-    {
-      "domain": "gameplayapi.intel.com",
-      "active": true
-    },
-    {
-      "domain": "improving.duckduckgo.com",
-      "active": true
-    },
-    {
-      "domain": "stat.joxi.ru",
-      "active": true
-    },
-    {
-      "domain": "no-thanks.invalid",
-      "active": true
-    },
-    {
-      "domain": "adsvolume.com",
-      "active": true
-    },
-    {
-      "domain": "ultimedia.com",
-      "active": true
-    },
-    {
-      "domain": "fukavertal.pro",
-      "active": true
-    },
-    {
-      "domain": "cowner.net",
-      "active": true
-    },
-    {
-      "domain": "hopigrarn.com",
-      "active": true
-    },
-    {
-      "domain": "pocketbitsllc.com",
-      "active": true
-    },
-    {
-      "domain": "emupdate.avcdn.net",
-      "active": true
-    },
-    {
-      "domain": "avast.com",
-      "active": true
-    },
-    {
-      "domain": "kas-labs.com",
-      "active": true
-    },
-    {
-      "domain": "kaspersky-labs.com",
-      "active": true
-    },
-    {
-      "domain": "kaspersky.com",
-      "active": false
-    },
-    {
-      "domain": "miro.app.link",
-      "active": true
-    },
-    {
-      "domain": "miro-alternate.app.link",
-      "active": true
-    },
-    {
-      "domain": "falcon.r.acdnpro.com",
-      "active": true
-    },
-    {
-      "domain": "sublimehq.com",
-      "active": true
-    },
-    {
-      "domain": "widget.intercom.io",
-      "active": true
-    },
-    {
-      "domain": "nexus-websocket-a.intercom.io",
-      "active": true
-    },
-    {
-      "domain": "api-iam.intercom.io",
-      "active": true
-    },
-    {
-      "domain": "js.intercomcdn.com",
-      "active": true
-    },
-    {
-      "domain": "www.intercom.com",
-      "active": true
-    },
-    {
-      "domain": "d2wy8f7a9ursnm.cloudfront.net",
-      "active": true
-    },
-    {
-      "domain": "ipaddress.com",
-      "active": true
-    },
-    {
-      "domain": "ninja.akamaized.net",
-      "active": true
-    },
-    {
-      "domain": "malwarebytes.org",
-      "active": true
-    },
-    {
-      "domain": "connectivity-check.ubuntu.com",
-      "active": true
-    },
-    {
-      "domain": "browser.sentry-cdn.com",
-      "active": true
-    },
-    {
-      "domain": "settings.crashlytics.com",
-      "active": true
-    },
-    {
-      "domain": "aaxads.com",
-      "active": true
-    },
-    {
-      "domain": "biglion.ru",
-      "active": true
-    },
-    {
-      "domain": "userator.ru",
-      "active": true
-    },
-    {
-      "domain": "betsponsport.ru",
-      "active": true
-    },
-    {
-      "domain": "robinbob.in",
-      "active": true
-    },
-    {
-      "domain": "utimg.ru",
-      "active": true
-    },
-    {
-      "domain": "vktarget.ru",
-      "active": true
-    },
-    {
-      "domain": "xray.imgsmail.ru",
-      "active": true
-    },
-    {
-      "domain": "yadro.com",
-      "active": true
-    },
-    {
-      "domain": "bz2.olx.uz",
-      "active": true
-    },
-    {
-      "domain": "tracking.olx-st.com",
-      "active": false
-    },
-    {
-      "domain": "cnt0.www.uz",
-      "active": true
-    },
-    {
-      "domain": "weather-analytics-events.apple.com",
-      "active": true
-    },
-    {
-      "domain": "livetileedge.dsx.mp.microsoft.com",
-      "active": true
-    },
-    {
-      "domain": "settings-win.data.microsoft.com",
-      "active": false
-    },
-    {
-      "domain": "dns.msftncsi.com",
-      "active": true
-    },
-    {
-      "domain": "client.wns.windows.com",
-      "active": false
-    },
-    {
-      "domain": "msftconnecttest.com",
-      "active": true
-    },
-    {
-      "domain": "manifest.googlevideo.com",
-      "active": false
-    },
-    {
-      "domain": "googletagmanager.com",
-      "active": true
-    },
-    {
-      "domain": "www-googletagmanager.l.google.com",
-      "active": true
-    },
-    {
-      "domain": "analytics-google.com",
-      "active": true
-    },
-    {
-      "domain": "csi.gstatic.com",
-      "active": true
-    },
-    {
-      "domain": "ogs.google.com",
-      "active": false
-    },
-    {
-      "domain": "tpc.googlesyndication.com",
-      "active": true
-    },
-    {
-      "domain": "adservice.google.co.uz",
-      "active": true
-    },
-    {
-      "domain": "fbsbx.com",
-      "active": true
-    },
-    {
-      "domain": "fbcdn.com",
-      "active": true
-    },
-    {
-      "domain": "graph.instagram.com",
-      "active": false
-    },
-    {
-      "domain": "admitad-connect.com",
-      "active": true
-    },
-    {
-      "domain": "advg.agency",
-      "active": true
-    },
-    {
-      "domain": "rutracker.appspot.com",
-      "active": true
-    },
-    {
-      "domain": "crisp.chat",
-      "active": true
-    }
-  ],
+  "rewrites": [],
   "allowlist": [
     {
-      "domain": "amp-api-edge.apps.apple.com",
+      "id": "plex.direct",
       "active": true
     },
     {
-      "domain": "i.instagram.com",
+      "id": "lgrecommends.lgappstv.com",
       "active": true
     },
     {
-      "domain": "emaillinks.soundiiz.com",
+      "id": "t.co",
       "active": true
     },
     {
-      "domain": "outline.community",
+      "id": "videoproc.com",
       "active": true
     },
     {
-      "domain": "rsload.xyz",
+      "id": "amp-api-edge.apps.apple.com",
       "active": true
     },
     {
-      "domain": "sso.passport.yandex.ru",
+      "id": "i.instagram.com",
       "active": true
     },
     {
-      "domain": "nnmstatic.win",
+      "id": "emaillinks.soundiiz.com",
       "active": true
     },
     {
-      "domain": "cdn.swaptrap.live",
+      "id": "outline.community",
+      "active": true
+    },
+    {
+      "id": "rsload.xyz",
+      "active": true
+    },
+    {
+      "id": "sso.passport.yandex.ru",
+      "active": true
+    },
+    {
+      "id": "nnmstatic.win",
+      "active": true
+    },
+    {
+      "id": "cdn.swaptrap.live",
       "active": false
     },
     {
-      "domain": "track.slurm.io",
+      "id": "track.slurm.io",
       "active": false
     },
     {
-      "domain": "cs.pikabu.ru",
+      "id": "cs.pikabu.ru",
       "active": false
     },
     {
-      "domain": "braze.com",
+      "id": "braze.com",
       "active": true
     },
     {
-      "domain": "oca.nflxvideo.net",
+      "id": "oca.nflxvideo.net",
       "active": true
     },
     {
-      "domain": "adguard.com",
+      "id": "adguard.com",
       "active": false
     },
     {
-      "domain": "activity.windows.com",
+      "id": "activity.windows.com",
       "active": true
     },
     {
-      "domain": "edge-enterprise.activity.windows.com",
+      "id": "edge-enterprise.activity.windows.com",
       "active": false
     },
     {
-      "domain": "docs.google.com",
+      "id": "docs.google.com",
       "active": false
     },
     {
-      "domain": "login.windows.net",
+      "id": "login.windows.net",
       "active": true
     },
     {
-      "domain": "sf.tlu.dl.delivery.mp.microsoft.com",
+      "id": "sf.tlu.dl.delivery.mp.microsoft.com",
       "active": true
     },
     {
-      "domain": "ut.taobao.com",
+      "id": "ut.taobao.com",
       "active": true
     },
     {
-      "domain": "api2.branch.io",
+      "id": "api2.branch.io",
       "active": false
     },
     {
-      "domain": "api.revenuecat.com",
+      "id": "api.revenuecat.com",
       "active": false
     },
     {
-      "domain": "myscreen.ru",
+      "id": "myscreen.ru",
       "active": true
     },
     {
-      "domain": "trk.mail.ru",
+      "id": "trk.mail.ru",
       "active": true
     },
     {
-      "domain": "s.gateway.messenger.live.com",
+      "id": "s.gateway.messenger.live.com",
       "active": true
     },
     {
-      "domain": "officeapps.live.com",
+      "id": "officeapps.live.com",
       "active": true
     },
     {
-      "domain": "continuum.dds.microsoft.com",
+      "id": "continuum.dds.microsoft.com",
       "active": true
     },
     {
-      "domain": "settings-win.data.microsoft.com",
+      "id": "settings-win.data.microsoft.com",
       "active": true
     },
     {
-      "domain": "id.google.ru",
+      "id": "id.google.ru",
       "active": false
     },
     {
-      "domain": "browser.pipe.aria.microsoft.com",
+      "id": "browser.pipe.aria.microsoft.com",
       "active": true
     },
     {
-      "domain": "push.yandex.ru",
+      "id": "push.yandex.ru",
       "active": false
     },
     {
-      "domain": "ic3.events.data.microsoft.com",
+      "id": "ic3.events.data.microsoft.com",
       "active": false
     },
     {
-      "domain": "smartasset.com",
+      "id": "smartasset.com",
       "active": true
     },
     {
-      "domain": "tiktokv.com",
+      "id": "tiktokv.com",
       "active": false
     },
     {
-      "domain": "ocsp2.apple.com",
+      "id": "ocsp2.apple.com",
       "active": true
     },
     {
-      "domain": "clientstream.launchdarkly.com",
+      "id": "clientstream.launchdarkly.com",
       "active": false
     },
     {
-      "domain": "events.data.microsoft.com",
+      "id": "events.data.microsoft.com",
       "active": true
     },
     {
-      "domain": "img.imgsmail.ru",
+      "id": "img.imgsmail.ru",
       "active": true
     },
     {
-      "domain": "id.google.com",
+      "id": "id.google.com",
       "active": true
     },
     {
-      "domain": "images.ctfassets.net",
+      "id": "images.ctfassets.net",
       "active": false
     },
     {
-      "domain": "adobe.com",
+      "id": "adobe.com",
       "active": false
     },
     {
-      "domain": "organicfruitapps.com",
+      "id": "organicfruitapps.com",
       "active": true
     },
     {
-      "domain": "alive.github.com",
+      "id": "alive.github.com",
       "active": true
     },
     {
-      "domain": "stat.radar.imgsmail.ru",
+      "id": "stat.radar.imgsmail.ru",
       "active": true
     },
     {
-      "domain": "xray.mail.ru",
+      "id": "xray.mail.ru",
       "active": false
     },
     {
-      "domain": "emails.parallels.com",
+      "id": "emails.parallels.com",
       "active": false
     },
     {
-      "domain": "microsoft.com",
+      "id": "microsoft.com",
       "active": false
     },
     {
-      "domain": "piunikaweb.com",
+      "id": "piunikaweb.com",
       "active": true
     },
     {
-      "domain": "edgewise.app",
+      "id": "edgewise.app",
       "active": true
     },
     {
-      "domain": "api-private.atlassian.com",
+      "id": "api-private.atlassian.com",
       "active": true
     },
     {
-      "domain": "app.gitbook.com",
+      "id": "app.gitbook.com",
       "active": true
     },
     {
-      "domain": "alfabit.org",
+      "id": "alfabit.org",
       "active": true
     },
     {
-      "domain": "ct.sendgrid.net",
+      "id": "ct.sendgrid.net",
       "active": true
     },
     {
-      "domain": "cryptopay.me",
+      "id": "cryptopay.me",
       "active": false
     },
     {
-      "domain": "37signals.com",
+      "id": "37signals.com",
       "active": false
     },
     {
-      "domain": "www.notion.so",
+      "id": "www.notion.so",
       "active": true
     },
     {
-      "domain": "trackingshipment.apple.com",
+      "id": "trackingshipment.apple.com",
       "active": true
     },
     {
-      "domain": "edge.activity.windows.com",
+      "id": "edge.activity.windows.com",
       "active": false
     },
     {
-      "domain": "self.events.data.microsoft.com",
+      "id": "self.events.data.microsoft.com",
       "active": false
     },
     {
-      "domain": "2ip.ru",
+      "id": "2ip.ru",
       "active": true
     },
     {
-      "domain": "st.vk.com",
+      "id": "st.vk.com",
       "active": true
     },
     {
-      "domain": "api.atlassian.com",
+      "id": "api.atlassian.com",
       "active": true
     },
     {
-      "domain": "rutracker.wiki",
+      "id": "rutracker.wiki",
       "active": false
     },
     {
-      "domain": "payeer.com",
+      "id": "payeer.com",
       "active": true
     },
     {
-      "domain": "fstream.binance.com",
+      "id": "fstream.binance.com",
       "active": true
     },
     {
-      "domain": "sls.update.microsoft.com",
+      "id": "sls.update.microsoft.com",
       "active": false
     },
     {
-      "domain": "hub.jetbrains.com",
+      "id": "hub.jetbrains.com",
       "active": true
     },
     {
-      "domain": "shavkatoff.com",
+      "id": "shavkatoff.com",
       "active": false
     },
     {
-      "domain": "blog.logrocket.com",
+      "id": "blog.logrocket.com",
       "active": true
     },
     {
-      "domain": "chart.apis.google.com",
+      "id": "chart.apis.google.com",
       "active": true
     },
     {
-      "domain": "advcash.com",
+      "id": "advcash.com",
       "active": true
     },
     {
-      "domain": "appleid.cdn-apple.com",
+      "id": "appleid.cdn-apple.com",
       "active": true
     },
     {
-      "domain": "app.link",
+      "id": "app.link",
       "active": false
     },
     {
-      "domain": "onesignal.com",
+      "id": "onesignal.com",
       "active": false
     },
     {
-      "domain": "s.youtube.com",
+      "id": "s.youtube.com",
       "active": true
     },
     {
-      "domain": "cdn.polyfill.io",
+      "id": "cdn.polyfill.io",
       "active": false
     },
     {
-      "domain": "ae01.alicdn.com",
+      "id": "ae01.alicdn.com",
       "active": false
     },
     {
-      "domain": "intercom.io",
+      "id": "intercom.io",
       "active": false
     }
   ],
+  "settings": {
+    "logs": {
+      "enabled": true,
+      "drop": {
+        "ip": true,
+        "domain": false
+      },
+      "retention": 2592000,
+      "location": "ch"
+    },
+    "blockPage": {
+      "enabled": false
+    },
+    "performance": {
+      "ecs": true,
+      "cacheBoost": true,
+      "cnameFlattening": true
+    },
+    "web3": true
+  },
+  "denylist": [
+    {
+      "id": "rdx2.lgtvsdp.com",
+      "active": true
+    },
+    {
+      "id": "aic-ngfts.lge.com",
+      "active": true
+    },
+    {
+      "id": "ngfts.lge.com",
+      "active": true
+    },
+    {
+      "id": "us.lgtvsdp.com",
+      "active": true
+    },
+    {
+      "id": "service.lgtvcommon.com",
+      "active": true
+    },
+    {
+      "id": "recommend.lgtvcommon.com",
+      "active": true
+    },
+    {
+      "id": "rdl.lgtvcommon.com",
+      "active": true
+    },
+    {
+      "id": "nudge.lgtvcommon.com",
+      "active": true
+    },
+    {
+      "id": "homeprv.lgtvcommon.com",
+      "active": true
+    },
+    {
+      "id": "cdpsvc.lgtvcommon.com",
+      "active": true
+    },
+    {
+      "id": "cdpbeacon.lgtvcommon.com",
+      "active": true
+    },
+    {
+      "id": "ntp.msn.com",
+      "active": true
+    },
+    {
+      "id": "easeus.com",
+      "active": false
+    },
+    {
+      "id": "ocsp.apple.com",
+      "active": false
+    },
+    {
+      "id": "u-stream.in",
+      "active": true
+    },
+    {
+      "id": "bing.com",
+      "active": false
+    },
+    {
+      "id": "aflt.yandex.ru",
+      "active": true
+    },
+    {
+      "id": "news-fancy.com",
+      "active": true
+    },
+    {
+      "id": "lalucherut.com",
+      "active": true
+    },
+    {
+      "id": "cdn.trafficbass.com",
+      "active": true
+    },
+    {
+      "id": "adfox.yandex.ru",
+      "active": true
+    },
+    {
+      "id": "an.yandex.ru",
+      "active": true
+    },
+    {
+      "id": "ads.adfox.ru",
+      "active": true
+    },
+    {
+      "id": "appstatico.eltima.com",
+      "active": true
+    },
+    {
+      "id": "adobelogin.com",
+      "active": false
+    },
+    {
+      "id": "adobe.io",
+      "active": false
+    },
+    {
+      "id": "adobe.com",
+      "active": true
+    },
+    {
+      "id": "crrepo.com",
+      "active": true
+    },
+    {
+      "id": "linkonclick.com",
+      "active": true
+    },
+    {
+      "id": "cx.atdmt.com",
+      "active": true
+    },
+    {
+      "id": "uplus.co.kr",
+      "active": true
+    },
+    {
+      "id": "ninja.data.olxcdn.com",
+      "active": true
+    },
+    {
+      "id": "laquesis.data.olxcdn.com",
+      "active": true
+    },
+    {
+      "id": "in-addr.arpa",
+      "active": false
+    },
+    {
+      "id": "services.gfe.nvidia.com",
+      "active": true
+    },
+    {
+      "id": "gameplayapi.intel.com",
+      "active": true
+    },
+    {
+      "id": "improving.duckduckgo.com",
+      "active": true
+    },
+    {
+      "id": "stat.joxi.ru",
+      "active": true
+    },
+    {
+      "id": "no-thanks.invalid",
+      "active": true
+    },
+    {
+      "id": "adsvolume.com",
+      "active": true
+    },
+    {
+      "id": "ultimedia.com",
+      "active": true
+    },
+    {
+      "id": "fukavertal.pro",
+      "active": true
+    },
+    {
+      "id": "cowner.net",
+      "active": true
+    },
+    {
+      "id": "hopigrarn.com",
+      "active": true
+    },
+    {
+      "id": "pocketbitsllc.com",
+      "active": true
+    },
+    {
+      "id": "emupdate.avcdn.net",
+      "active": true
+    },
+    {
+      "id": "avast.com",
+      "active": true
+    },
+    {
+      "id": "kas-labs.com",
+      "active": true
+    },
+    {
+      "id": "kaspersky-labs.com",
+      "active": true
+    },
+    {
+      "id": "kaspersky.com",
+      "active": false
+    },
+    {
+      "id": "miro.app.link",
+      "active": true
+    },
+    {
+      "id": "miro-alternate.app.link",
+      "active": true
+    },
+    {
+      "id": "falcon.r.acdnpro.com",
+      "active": true
+    },
+    {
+      "id": "sublimehq.com",
+      "active": true
+    },
+    {
+      "id": "widget.intercom.io",
+      "active": true
+    },
+    {
+      "id": "nexus-websocket-a.intercom.io",
+      "active": true
+    },
+    {
+      "id": "api-iam.intercom.io",
+      "active": true
+    },
+    {
+      "id": "js.intercomcdn.com",
+      "active": true
+    },
+    {
+      "id": "www.intercom.com",
+      "active": true
+    },
+    {
+      "id": "d2wy8f7a9ursnm.cloudfront.net",
+      "active": true
+    },
+    {
+      "id": "ipaddress.com",
+      "active": true
+    },
+    {
+      "id": "ninja.akamaized.net",
+      "active": true
+    },
+    {
+      "id": "malwarebytes.org",
+      "active": true
+    },
+    {
+      "id": "connectivity-check.ubuntu.com",
+      "active": true
+    },
+    {
+      "id": "browser.sentry-cdn.com",
+      "active": true
+    },
+    {
+      "id": "settings.crashlytics.com",
+      "active": true
+    },
+    {
+      "id": "aaxads.com",
+      "active": true
+    },
+    {
+      "id": "biglion.ru",
+      "active": true
+    },
+    {
+      "id": "userator.ru",
+      "active": true
+    },
+    {
+      "id": "betsponsport.ru",
+      "active": true
+    },
+    {
+      "id": "robinbob.in",
+      "active": true
+    },
+    {
+      "id": "utimg.ru",
+      "active": true
+    },
+    {
+      "id": "vktarget.ru",
+      "active": true
+    },
+    {
+      "id": "xray.imgsmail.ru",
+      "active": true
+    },
+    {
+      "id": "yadro.com",
+      "active": true
+    },
+    {
+      "id": "bz2.olx.uz",
+      "active": true
+    },
+    {
+      "id": "tracking.olx-st.com",
+      "active": false
+    },
+    {
+      "id": "cnt0.www.uz",
+      "active": true
+    },
+    {
+      "id": "weather-analytics-events.apple.com",
+      "active": true
+    },
+    {
+      "id": "livetileedge.dsx.mp.microsoft.com",
+      "active": true
+    },
+    {
+      "id": "settings-win.data.microsoft.com",
+      "active": false
+    },
+    {
+      "id": "dns.msftncsi.com",
+      "active": true
+    },
+    {
+      "id": "client.wns.windows.com",
+      "active": false
+    },
+    {
+      "id": "msftconnecttest.com",
+      "active": true
+    },
+    {
+      "id": "manifest.googlevideo.com",
+      "active": false
+    },
+    {
+      "id": "googletagmanager.com",
+      "active": true
+    },
+    {
+      "id": "www-googletagmanager.l.google.com",
+      "active": true
+    },
+    {
+      "id": "analytics-google.com",
+      "active": true
+    },
+    {
+      "id": "csi.gstatic.com",
+      "active": true
+    },
+    {
+      "id": "ogs.google.com",
+      "active": false
+    },
+    {
+      "id": "tpc.googlesyndication.com",
+      "active": true
+    },
+    {
+      "id": "adservice.google.co.uz",
+      "active": true
+    },
+    {
+      "id": "fbsbx.com",
+      "active": true
+    },
+    {
+      "id": "fbcdn.com",
+      "active": true
+    },
+    {
+      "id": "graph.instagram.com",
+      "active": false
+    },
+    {
+      "id": "admitad-connect.com",
+      "active": true
+    },
+    {
+      "id": "advg.agency",
+      "active": true
+    },
+    {
+      "id": "rutracker.appspot.com",
+      "active": true
+    },
+    {
+      "id": "crisp.chat",
+      "active": true
+    }
+  ],
+  "security": {
+    "threatIntelligenceFeeds": true,
+    "aiThreatDetection": true,
+    "googleSafeBrowsing": true,
+    "cryptojacking": true,
+    "dnsRebinding": true,
+    "idnHomographs": true,
+    "typosquatting": true,
+    "dga": true,
+    "nrd": true,
+    "ddns": true,
+    "parking": true,
+    "csam": true,
+    "tlds": []
+  },
+  "privacy": {
+    "disguisedTrackers": true,
+    "allowAffiliate": false,
+    "blocklists": [
+      {
+        "id": "goodbye-ads"
+      },
+      {
+        "id": "steven-black"
+      },
+      {
+        "id": "adaway"
+      },
+      {
+        "id": "adguard-dns-filter"
+      },
+      {
+        "id": "1hosts-pro"
+      },
+      {
+        "id": "energized-ultimate"
+      },
+      {
+        "id": "nextdns-recommended"
+      },
+      {
+        "id": "windowsspyblocker-spy"
+      },
+      {
+        "id": "peter-lowe"
+      },
+      {
+        "id": "adguard-base-filter"
+      },
+      {
+        "id": "uncheckyads"
+      },
+      {
+        "id": "someonewhocares"
+      },
+      {
+        "id": "fanboy-annoyance"
+      },
+      {
+        "id": "adguard-tracking-protection-filter"
+      },
+      {
+        "id": "easyprivacy"
+      },
+      {
+        "id": "easylist"
+      },
+      {
+        "id": "oisd"
+      },
+      {
+        "id": "notracking"
+      },
+      {
+        "id": "perflyst-smarttv"
+      },
+      {
+        "id": "adguard-russian-filter"
+      },
+      {
+        "id": "ru-adlist"
+      }
+    ],
+    "natives": [
+      {
+        "id": "apple"
+      },
+      {
+        "id": "windows"
+      },
+      {
+        "id": "samsung"
+      },
+      {
+        "id": "alexa"
+      },
+      {
+        "id": "huawei"
+      },
+      {
+        "id": "xiaomi"
+      },
+      {
+        "id": "roku"
+      },
+      {
+        "id": "sonos"
+      }
+    ]
+  },
   "parentalcontrol": {
     "safeSearch": false,
     "youtubeRestrictedMode": false,
@@ -670,35 +861,38 @@
     "services": [
       {
         "id": "tinder",
-        "active": false
+        "active": false,
+        "recreation": false
       },
       {
         "id": "whatsapp",
-        "active": false
-      },
-      {
-        "id": "zoom",
-        "active": false
+        "active": false,
+        "recreation": false
       },
       {
         "id": "blizzard",
-        "active": true
+        "active": true,
+        "recreation": false
       },
       {
         "id": "ebay",
-        "active": true
+        "active": true,
+        "recreation": false
       },
       {
         "id": "pinterest",
-        "active": true
+        "active": true,
+        "recreation": false
       },
       {
         "id": "facebook",
-        "active": true
+        "active": true,
+        "recreation": false
       },
       {
         "id": "minecraft",
-        "active": true
+        "active": true,
+        "recreation": false
       }
     ],
     "categories": [
@@ -727,89 +921,10 @@
         "recreation": false,
         "active": false
       }
-    ]
-  },
-  "security": {
-    "threatIntelligenceFeeds": true,
-    "aiThreatDetection": true,
-    "googleSafeBrowsing": true,
-    "cryptojacking": true,
-    "dnsRebinding": true,
-    "homograph": true,
-    "typosquatting": true,
-    "dga": true,
-    "nrd": true,
-    "ddns": false,
-    "parked": true,
-    "csam": true,
-    "blocked_tlds": []
-  },
-  "settings": {
-    "name": "Secure L1",
-    "logging": true,
-    "logging_disable_query": false,
-    "logging_disable_client": true,
-    "logging_retention": 2592000,
-    "logging_location": "ch",
-    "blockPage": false,
-    "ecs": true,
-    "cacheBoost": true,
-    "cnameFlattening": true,
-    "web3": true,
-    "rewrites": []
-  },
-  "privacy": {
-    "blockDisguised": true,
-    "allowAffiliate": false,
-    "blocklists": [
-      "goodbye-ads",
-      "steven-black",
-      "adaway",
-      "adguard-dns-filter",
-      "1hosts-pro",
-      "energized-ultimate",
-      "nextdns-recommended",
-      "windowsspyblocker-spy",
-      "peter-lowe",
-      "adguard-base-filter",
-      "uncheckyads",
-      "someonewhocares",
-      "fanboy-annoyance",
-      "adguard-tracking-protection-filter",
-      "easyprivacy",
-      "easylist",
-      "oisd",
-      "notracking",
-      "lightswitch05-ads-tracking",
-      "perflyst-smarttv",
-      "adguard-russian-filter",
-      "ru-adlist"
     ],
-    "natives": [
-      {
-        "id": "apple"
-      },
-      {
-        "id": "windows"
-      },
-      {
-        "id": "samsung"
-      },
-      {
-        "id": "alexa"
-      },
-      {
-        "id": "huawei"
-      },
-      {
-        "id": "xiaomi"
-      },
-      {
-        "id": "roku"
-      },
-      {
-        "id": "sonos"
-      }
-    ]
+    "recreation": {
+      "times": {},
+      "timezone": null
+    }
   }
 }

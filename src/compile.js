@@ -11,7 +11,7 @@ const domains = (
   .filter(
     (domain) =>
       !nextdnsConfig.allowlist.find(
-        ({ domain: allowDomain, active }) => allowDomain === domain && active
+        ({ id: allowDomain, active }) => allowDomain === domain && active
       )
   );
 

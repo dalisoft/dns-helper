@@ -8,10 +8,10 @@ const { ACTIVE_ALLOW_RULE_PREFIX, ACTIVE_BLOCK_RULE_PREFIX } = constants;
 
 const allowlist = nextdnsConfig.allowlist
   .filter(({ active }) => active)
-  .map(({ domain }) => `${ACTIVE_ALLOW_RULE_PREFIX}${domain}^`);
+  .map(({ id: domain }) => `${ACTIVE_ALLOW_RULE_PREFIX}${domain}^`);
 const denylist = nextdnsConfig.denylist
   .filter(({ active }) => active)
-  .map(({ domain }) => `${ACTIVE_BLOCK_RULE_PREFIX}${domain}^`);
+  .map(({ id: domain }) => `${ACTIVE_BLOCK_RULE_PREFIX}${domain}^`);
 const list = [...allowlist, ...denylist];
 
 filters.unshift({
