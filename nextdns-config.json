@@ -1,6 +1,33 @@
 {
-  "rewrites": [],
+  "settings": {
+    "logs": {
+      "enabled": true,
+      "drop": {
+        "ip": true,
+        "domain": false
+      },
+      "retention": 2592000,
+      "location": "ch"
+    },
+    "blockPage": {
+      "enabled": false
+    },
+    "performance": {
+      "ecs": true,
+      "cacheBoost": true,
+      "cnameFlattening": true
+    },
+    "web3": true
+  },
   "allowlist": [
+    {
+      "id": "crt.sectigo.com",
+      "active": true
+    },
+    {
+      "id": "factpic.ru",
+      "active": true
+    },
     {
       "id": "plex.direct",
       "active": true
@@ -11,11 +38,11 @@
     },
     {
       "id": "t.co",
-      "active": true
+      "active": false
     },
     {
       "id": "videoproc.com",
-      "active": true
+      "active": false
     },
     {
       "id": "amp-api-edge.apps.apple.com",
@@ -71,7 +98,7 @@
     },
     {
       "id": "activity.windows.com",
-      "active": true
+      "active": false
     },
     {
       "id": "edge-enterprise.activity.windows.com",
@@ -83,11 +110,11 @@
     },
     {
       "id": "login.windows.net",
-      "active": true
+      "active": false
     },
     {
       "id": "sf.tlu.dl.delivery.mp.microsoft.com",
-      "active": true
+      "active": false
     },
     {
       "id": "ut.taobao.com",
@@ -107,7 +134,7 @@
     },
     {
       "id": "trk.mail.ru",
-      "active": true
+      "active": false
     },
     {
       "id": "s.gateway.messenger.live.com",
@@ -119,11 +146,11 @@
     },
     {
       "id": "continuum.dds.microsoft.com",
-      "active": true
+      "active": false
     },
     {
       "id": "settings-win.data.microsoft.com",
-      "active": true
+      "active": false
     },
     {
       "id": "id.google.ru",
@@ -131,7 +158,7 @@
     },
     {
       "id": "browser.pipe.aria.microsoft.com",
-      "active": true
+      "active": false
     },
     {
       "id": "push.yandex.ru",
@@ -151,7 +178,7 @@
     },
     {
       "id": "ocsp2.apple.com",
-      "active": true
+      "active": false
     },
     {
       "id": "clientstream.launchdarkly.com",
@@ -159,15 +186,15 @@
     },
     {
       "id": "events.data.microsoft.com",
-      "active": true
+      "active": false
     },
     {
       "id": "img.imgsmail.ru",
-      "active": true
+      "active": false
     },
     {
       "id": "id.google.com",
-      "active": true
+      "active": false
     },
     {
       "id": "images.ctfassets.net",
@@ -187,7 +214,7 @@
     },
     {
       "id": "stat.radar.imgsmail.ru",
-      "active": true
+      "active": false
     },
     {
       "id": "xray.mail.ru",
@@ -326,27 +353,111 @@
       "active": false
     }
   ],
-  "settings": {
-    "logs": {
-      "enabled": true,
-      "drop": {
-        "ip": true,
-        "domain": false
-      },
-      "retention": 2592000,
-      "location": "ch"
-    },
-    "blockPage": {
-      "enabled": false
-    },
-    "performance": {
-      "ecs": true,
-      "cacheBoost": true,
-      "cnameFlattening": true
-    },
-    "web3": true
+  "security": {
+    "threatIntelligenceFeeds": true,
+    "aiThreatDetection": true,
+    "googleSafeBrowsing": true,
+    "cryptojacking": true,
+    "dnsRebinding": true,
+    "idnHomographs": true,
+    "typosquatting": true,
+    "dga": true,
+    "nrd": true,
+    "ddns": true,
+    "parking": true,
+    "csam": true,
+    "tlds": []
   },
+  "rewrites": [],
   "denylist": [
+    {
+      "id": "namenodsic.live",
+      "active": true
+    },
+    {
+      "id": "futurepreneurhub.com",
+      "active": true
+    },
+    {
+      "id": "use-application-dns.net",
+      "active": true
+    },
+    {
+      "id": "cdn.walkme.com",
+      "active": true
+    },
+    {
+      "id": "api.gfe.nvidia.com",
+      "active": true
+    },
+    {
+      "id": "activation.gfe.nvidia.com",
+      "active": true
+    },
+    {
+      "id": "kenjo.eu2app.churnzero.net",
+      "active": true
+    },
+    {
+      "id": "matomo.korohub.xyz",
+      "active": true
+    },
+    {
+      "id": "daisy.ubuntu.com",
+      "active": true
+    },
+    {
+      "id": "ios.prod.http1.netflix.com",
+      "active": true
+    },
+    {
+      "id": "msedgeextensions.sb.tlu.dl.delivery.mp.microsoft.com",
+      "active": true
+    },
+    {
+      "id": "hypersexs.online",
+      "active": true
+    },
+    {
+      "id": "ecx.images-amazon.com",
+      "active": true
+    },
+    {
+      "id": "download.db-ip.com",
+      "active": true
+    },
+    {
+      "id": "mask-api.fe.apple-dns.net",
+      "active": true
+    },
+    {
+      "id": "mask.apple-dns.net",
+      "active": true
+    },
+    {
+      "id": "mask-t.apple-dns.net",
+      "active": true
+    },
+    {
+      "id": "mask-api.icloud.com",
+      "active": true
+    },
+    {
+      "id": "mask-h2.icloud.com",
+      "active": true
+    },
+    {
+      "id": "mask.icloud.com",
+      "active": true
+    },
+    {
+      "id": "static.hdrezka.ac",
+      "active": false
+    },
+    {
+      "id": "cdn.servetraff.com",
+      "active": true
+    },
     {
       "id": "rdx2.lgtvsdp.com",
       "active": true
@@ -744,28 +855,10 @@
       "active": true
     }
   ],
-  "security": {
-    "threatIntelligenceFeeds": true,
-    "aiThreatDetection": true,
-    "googleSafeBrowsing": true,
-    "cryptojacking": true,
-    "dnsRebinding": true,
-    "idnHomographs": true,
-    "typosquatting": true,
-    "dga": true,
-    "nrd": true,
-    "ddns": true,
-    "parking": true,
-    "csam": true,
-    "tlds": []
-  },
   "privacy": {
     "disguisedTrackers": true,
     "allowAffiliate": false,
     "blocklists": [
-      {
-        "id": "goodbye-ads"
-      },
       {
         "id": "steven-black"
       },
@@ -773,43 +866,13 @@
         "id": "adaway"
       },
       {
-        "id": "adguard-dns-filter"
-      },
-      {
-        "id": "1hosts-pro"
-      },
-      {
-        "id": "energized-ultimate"
-      },
-      {
         "id": "nextdns-recommended"
-      },
-      {
-        "id": "windowsspyblocker-spy"
       },
       {
         "id": "peter-lowe"
       },
       {
-        "id": "adguard-base-filter"
-      },
-      {
-        "id": "uncheckyads"
-      },
-      {
         "id": "someonewhocares"
-      },
-      {
-        "id": "fanboy-annoyance"
-      },
-      {
-        "id": "adguard-tracking-protection-filter"
-      },
-      {
-        "id": "easyprivacy"
-      },
-      {
-        "id": "easylist"
       },
       {
         "id": "oisd"
@@ -821,10 +884,28 @@
         "id": "perflyst-smarttv"
       },
       {
-        "id": "adguard-russian-filter"
+        "id": "windowsspyblocker-spy"
+      },
+      {
+        "id": "energized-ultimate"
+      },
+      {
+        "id": "1hosts-pro"
       },
       {
         "id": "ru-adlist"
+      },
+      {
+        "id": "easylist"
+      },
+      {
+        "id": "easyprivacy"
+      },
+      {
+        "id": "fanboy-annoyance"
+      },
+      {
+        "id": "goodbye-ads"
       }
     ],
     "natives": [
@@ -891,6 +972,11 @@
       },
       {
         "id": "minecraft",
+        "active": true,
+        "recreation": false
+      },
+      {
+        "id": "twitter",
         "active": true,
         "recreation": false
       }

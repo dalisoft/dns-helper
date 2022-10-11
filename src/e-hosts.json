@@ -25,7 +25,7 @@
     "host": "external",
     "link": "https://kb.adguard.com/en/general/adguard-ad-filters#base-filter",
     "filters": {
-      "rules": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_English/filter.txt"
+      "rules": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt"
     }
   },
   "adguard-dns-filter": {
