@@ -21,12 +21,16 @@
   },
   "allowlist": [
     {
+      "id": "fonts.gstatic.com",
+      "active": true
+    },
+    {
       "id": "crt.sectigo.com",
       "active": true
     },
     {
       "id": "factpic.ru",
-      "active": true
+      "active": false
     },
     {
       "id": "plex.direct",
@@ -86,7 +90,7 @@
     },
     {
       "id": "braze.com",
-      "active": true
+      "active": false
     },
     {
       "id": "oca.nflxvideo.net",
@@ -246,7 +250,7 @@
     },
     {
       "id": "alfabit.org",
-      "active": true
+      "active": false
     },
     {
       "id": "ct.sendgrid.net",
@@ -370,6 +374,14 @@
   },
   "rewrites": [],
   "denylist": [
+    {
+      "id": "tracker.dler.org",
+      "active": true
+    },
+    {
+      "id": "play.google.com",
+      "active": true
+    },
     {
       "id": "namenodsic.live",
       "active": true
